@@ -1,0 +1,12 @@
+.high-toolbar {
+  height: 220px;
+}
+
+.text-center {
+  justify-content: center;
+}
+.title-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}

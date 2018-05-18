@@ -1,0 +1,23 @@
+<mat-vertical-stepper >
+  <mat-step label="{{work.label}}" *ngFor="let work of workExprience">
+    <mat-card class="standard-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title><b>{{work.title}}</b></mat-card-title>
+        <mat-card-subtitle>{{work.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+      <mat-card-content>
+        <p *ngFor="let paragraph of work.content">
+          <span [innerHTML] = "paragraph | safeHtmlPipe">
+          </span>
+        </p>
+        <mat-chip-list>
+          <mat-chip *ngFor="let chip of work.chips" color="accent">
+            {{chip}}
+          </mat-chip>
+        </mat-chip-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-step>
+</mat-vertical-stepper>
