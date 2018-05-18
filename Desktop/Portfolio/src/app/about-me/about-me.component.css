@@ -1,0 +1,14 @@
+.text-center {
+  display: flex;
+  justify-content: center !important;
+  margin-top: 20px;
+  flex: none;
+}
+
+.standard-card {
+  width: 500px;
+}
+
+.align-center {
+  text-align: center;
+}

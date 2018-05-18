@@ -7,7 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
   MatCardModule,
-  MatChipsModule,
+  MatChipsModule, MatListModule,
   MatSidenavModule,
   MatStepperModule,
   MatTabsModule,
@@ -15,13 +15,17 @@ import {
 } from '@angular/material';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { SafeHtmlPipe } from './safe-html.pipe';
+import { EducationComponent } from './education/education.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     WorkExperienceComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    EducationComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { SafeHtmlPipe } from './safe-html.pipe';
     MatSidenavModule,
     MatCardModule,
     MatChipsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

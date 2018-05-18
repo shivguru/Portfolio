@@ -1,0 +1,35 @@
+<mat-vertical-stepper >
+  <mat-step label="{{eduEntity.label}}" *ngFor="let eduEntity of education">
+    <mat-card class="standard-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title><b>{{eduEntity.title}}</b></mat-card-title>
+        <mat-card-subtitle>{{eduEntity.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+      <mat-card-content>
+        <p *ngFor="let paragraph of eduEntity.content">
+          <span [innerHTML] = "paragraph | safeHtmlPipe">
+          </span>
+        </p>
+        <p *ngFor="let list of eduEntity.lists">
+          <b>{{list.title}}</b>
+          <mat-list>
+            <mat-list-item *ngFor="let sublist of list.content">
+              <p matLine>{{sublist.title}}</p>
+              <p matLine>    </p>
+              <p matLine>{{sublist.content}} </p>
+              <p class="unset-whitespace" matLine>
+                <mat-chip-list>
+                  <mat-chip *ngFor="let chip of sublist.chips" color="accent" selected="true">
+                    {{chip}}
+                  </mat-chip>
+                </mat-chip-list>
+              </p>
+            </mat-list-item>
+          </mat-list>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-step>
+</mat-vertical-stepper>
