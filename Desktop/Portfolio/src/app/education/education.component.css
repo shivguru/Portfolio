@@ -15,3 +15,7 @@
   word-wrap: initial !important;
   white-space: initial !important;
 }
+
+.mat-chip {
+  margin-top: 5px !important;
+}

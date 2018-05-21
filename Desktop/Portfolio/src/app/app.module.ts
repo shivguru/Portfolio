@@ -7,7 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
   MatCardModule,
-  MatChipsModule, MatListModule,
+  MatChipsModule, MatIconModule, MatListModule,
   MatSidenavModule,
   MatStepperModule,
   MatTabsModule,
@@ -17,6 +17,8 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { SafeHtmlPipe } from './safe-html.pipe';
 import { EducationComponent } from './education/education.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import {GetJsonService} from './services/get-json.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -37,9 +39,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MatCardModule,
     MatChipsModule,
     MatTabsModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GetJsonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

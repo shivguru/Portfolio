@@ -1,0 +1,47 @@
+{"json": [
+  {
+    "label": "Aviation Lovers",
+    "title": "Web Developer (Freelance)",
+    "subtitle": "March 2018 - May 2018",
+    "content": [
+      "Aviation lovers is an in-house website to assist customer care agents, who take care of the lost baggage claims for some of the major German airlines.",
+      "It consists of 3 main modules:<ol><li>Web-Training slide show about Data Security</li><li>Calculation module used to calculate the money to be paid to customers for the loss</li><li>Excel export module to export all the customer data along with money to be paid on a weekly basis</li></ol>",
+      "I was responsible for:<ul><li>Designing and developing the website as an Angular 5 single page application(SPA)</li><li>Integrate currency API from Fixer.io for currency conversions</li><li>Integrate Zendesk Ticketing API to read and write data about customers and tickets</li></ul>"
+    ],
+    "chips": ["HTML5", "CSS3", "Bootstrap4", "JavaScript", "TypeScript", "Angular 5", "jQuery", "ZenDesk API", "Fixer.io API", "Webpack"]
+  },
+  {
+    "label": "Intel Deutschland GmbH, Munich",
+    "title": "Web Developer (Work Student)",
+    "subtitle": "Sep 2016 - Present",
+    "content": [
+      "Top100 is a requirement management and analytics application which contains data about operator requirements and features requirements. The data is presented in an intuitive way with filter for users to access specific data based on operator region, country and time line.",
+      "Top100 application mainly consists of:<ol><li>Krebos authentication proxy</li><li>Features module to track the features of Intel platforms</li><li>Operators module to track all the operator requirements of Bands and Carrier Aggregations(CAs)</li><li>Frequency table which provides a graphical representation of 3GPP bands</li><li>Admin section for user management, data management, access rights management and syncing with JAMA system</li></ol>",
+      "I was responsible for: <br><ul><li>Designing the operator module</li><li>Taking design decisions to improve the overall performance of web the application</li><li>Refactoring legacy code to make it more reusable and maintainable</li><li>Maintaining and fixing bugs</li></ul>"
+    ],
+    "chips": ["PHP5", "Codeigniter", "HTML5", "CSS3", "Bootstrap3", "JavaScript (ES6)", "jQuery", "C3.js", "Apache", "MySQL", "Babel"]
+
+  },
+  {
+    "label": "PAKX GmbH, Munich (Germany)",
+    "title": "Web Developer (Work Student)",
+    "subtitle": "Aug 2015 - Aug 2016",
+    "content": [
+      "PAKX GmbH was an end-user logistics startup with the focus on helping users get their ordered packages at their convenience",
+      "PAKX website consisted of following modules:: <ol><li>Details about PAKK and its services</li><li>User portal to schedule and keep track of their packages</li><li>Admin portal where admins can add or see the overview of all the packages, export it as excel and monitor the delivery process</li></ol>",
+      "I was responsible for: <br><ul><li>Designing the complete Website</li><li>Developing and deploying new features</li><li>Schedule periodic maintenance database</li></ul>"
+    ],
+    "chips": ["PHP5", "Codeigniter", "HTML5", "CSS3", "Bootstrap3", "JavaScript (ES6)", "jQuery", "Apache", "MySQL"]
+
+  },
+  {
+    "label": "SAP Labs India Pvt Ltd, Bangalore (India)",
+    "title": "Scholar",
+    "subtitle": "Aug 2013 - July 2014",
+    "content": [
+      "I have worked on Extended Warehouse Management (EWM) system with is a part of SAP's Supply Chain Management Suite. I was a part of <b>EWM & TM | Suite Test Center – Test Engineering team. I was mainly involved in the <b>Automation and Functional testing</b> of the EWM system",
+      "I was responsible for: <br><ul><li>Creating automated test scripts using eCATT tool</li><li>Functional testing(Regression testing) of EWM 9.1 release</li></ul>"
+    ],
+    "chips": ["eCATT", "SAP EWM"]
+  }
+]}

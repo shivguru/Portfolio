@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GetJsonService} from '../services/get-json.service';
 
 @Component({
   selector: 'app-work-experience',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-experience.component.css']
 })
 export class WorkExperienceComponent implements OnInit {
-  workExprience: object = [
+  workExprience: object;
+  workExprience1: object = [
     {
       'label': 'Aviation Lovers',
       'title': 'Web Developer (Freelance)',
@@ -44,9 +46,17 @@ export class WorkExperienceComponent implements OnInit {
 
     }
   ];
-  constructor() { }
+  constructor(private jsonService: GetJsonService) { }
 
   ngOnInit() {
+
+    // Get the JSON slides
+    this.jsonService.getJSON('assets/jsons/work_exp.json').subscribe(result => {
+      // Store the json
+      this.workExprience = result.json;
+    }, error => {
+      console.log( 'Json not retrieved' );
+    });
   }
 
 }
